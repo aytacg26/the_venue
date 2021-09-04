@@ -15,14 +15,6 @@ const App = () => {
       <VenueNfo eventDate={eventDate} />
       <Highlights />
       <Pricing />
-      {/* <div style={{ backgroundColor: 'red', height: 800 }}>
-        THIS PART WILL CONTAIN EVENT TIME AND PRICES
-      </div>
-      <div style={{ backgroundColor: 'blue', height: 800 }}>
-        THIS PART WILL CONTAIN
-      </div>
-      <div style={{ backgroundColor: 'green', height: 800 }}></div>
-      <div style={{ backgroundColor: 'yellow', height: 800 }}></div> */}
       <Footer />
     </div>
   );
