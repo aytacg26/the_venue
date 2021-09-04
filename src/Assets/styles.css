@@ -348,13 +348,14 @@ footer .footer_copyright {
   bottom: 0px;
   width: 100%;
 }
-.location_tag div {
-  background: #2c2c2c;
+.location_tag h3 {
+  background: #2c2c2cc5;
   color: #ffffff;
   text-transform: uppercase;
-  width: 220px;
+  width: 300px;
   margin: 0 auto;
   font-size: 29px;
   padding: 15px 20px;
   text-align: center;
+  box-shadow: 1px 1px 3px black;
 }

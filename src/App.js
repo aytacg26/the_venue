@@ -5,6 +5,7 @@ import Featured from './components/featured';
 import VenueNfo from './components/venueNfo';
 import Highlights from './components/highlights';
 import Pricing from './components/pricing';
+import Location from './components/location';
 
 const eventDate = 'Nov, 25, 2021, 20:30:00';
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <VenueNfo eventDate={eventDate} />
       <Highlights />
       <Pricing />
+      <Location />
       <Footer />
     </div>
   );
