@@ -31,7 +31,8 @@ const TimeUntil = ({ eventDate }) => {
   }, []);
 
   useEffect(() => {
-    const counter = setInterval(() => getTimeUntil(eventDate), 1000);
+    const deadLine = eventDate || new Date();
+    const counter = setInterval(() => getTimeUntil(deadLine), 1000);
 
     return () => {
       clearInterval(counter);

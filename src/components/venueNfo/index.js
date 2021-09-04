@@ -4,7 +4,7 @@ import InfoBox from './InfoBox';
 
 const VenueNfo = (props) => {
   const formatEventDate = () => {
-    const date = new Date(props.eventDate);
+    const date = props.eventDate ? new Date(props.eventDate) : new Date();
     const formatedDate = date.toLocaleDateString('en-En', {
       year: 'numeric',
       month: 'short',
