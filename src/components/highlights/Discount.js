@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
+import VNButton from '../UI/VNButton';
 
 const Discount = () => {
   const end = 30;
@@ -48,6 +49,13 @@ const Discount = () => {
               dolor cupiditate dolore quam libero voluptates quae doloribus
               excepturi dolorem laborum provident modi eius.
             </p>
+            <VNButton
+              text='Purchase Tickets'
+              size='small'
+              link='https://www.google.com'
+              style={{ background: '#ffa800', color: '#fff' }}
+              iconTicket
+            />
           </div>
         </Slide>
       </div>
