@@ -2,14 +2,14 @@ import React from 'react';
 import Carousel from './Carousel';
 import TimeUntil from './TimeUntil';
 
-const Featured = () => {
+const Featured = (props) => {
   return (
     <div className='featured_container'>
       <Carousel />
       <div className='artist_name'>
         <div className='wrapper'>Ariana Grande</div>
       </div>
-      <TimeUntil />
+      <TimeUntil eventDate={props.eventDate} />
     </div>
   );
 };

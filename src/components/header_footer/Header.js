@@ -16,11 +16,9 @@ const Header = () => {
   };
 
   useEffect(() => {
-    console.log('UseEffect');
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      console.log('Removing...');
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);

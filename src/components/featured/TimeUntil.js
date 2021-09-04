@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Slide } from 'react-awesome-reveal';
 
-const TimeUntil = (props) => {
+const TimeUntil = ({ eventDate }) => {
   const [time, setTime] = useState({
     days: '0',
     hours: '0',
@@ -31,16 +31,12 @@ const TimeUntil = (props) => {
   }, []);
 
   useEffect(() => {
-    console.log('calling');
-    const counter = setInterval(
-      () => getTimeUntil('Sep, 4, 2021, 20:24:00'),
-      1000
-    );
+    const counter = setInterval(() => getTimeUntil(eventDate), 1000);
 
     return () => {
       clearInterval(counter);
     };
-  }, [getTimeUntil]);
+  }, [getTimeUntil, eventDate]);
 
   const renderItem = (time, tag) => (
     <div className='countdown_item'>
