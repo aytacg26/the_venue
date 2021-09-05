@@ -4,7 +4,7 @@ import VNButton from '../UI/VNButton';
 
 const PricingBox = ({ link, delay, price, position, description }) => {
   return (
-    <Zoom key={link} className='pricing_item' delay={delay}>
+    <Zoom className='pricing_item' delay={delay}>
       <div className='pricing_inner_wrapper'>
         <div className='pricing_title'>
           <span>${price}</span>
